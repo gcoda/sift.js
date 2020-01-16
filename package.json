@@ -11,7 +11,7 @@
   "license": "MIT",
   "engines": {},
   "dependencies": {},
-  "typings": "./index.d.ts",
+  "typings": "./lib/index.d.ts",
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"

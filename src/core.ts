@@ -23,7 +23,7 @@ export type OperationCreator = (
 ) => Operation;
 
 export type Query = {
-  [identifier: string]: Query | Object;
+  [identifier: string]: undefined | Query | Object;
   $eq?: any;
   $ne?: any;
   $elemMatch?: Query;
@@ -35,7 +35,7 @@ export type Query = {
   $exists?: boolean;
   $regex?: string;
   $options?: "i" | "g" | "m" | "u";
-  $type: Function;
+  $type?: Function;
   $or?: Query[];
   $nor?: Query[];
 };
